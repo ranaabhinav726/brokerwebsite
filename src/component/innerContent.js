@@ -1,14 +1,14 @@
 import React from "react";
-// import OwlCarousel from 'react-owl-carousel';
-// import 'owl.carousel/dist/assets/owl.carousel.css';
-// import 'owl.carousel/dist/assets/owl.theme.default.css';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const innerPage = () => {
     return (
         <div className="container">
             <div className="row">
                 <div className="col-xs-12">
-                    {/* <OwlCarousel className='owl-theme' loop margin={10} nav>
+                    <OwlCarousel className='owl-theme' loop margin={10} nav>
                         <div class='item'>
                             <h4>1</h4>
                         </div>
@@ -45,7 +45,7 @@ const innerPage = () => {
                         <div class='item'>
                             <h4>12</h4>
                         </div>
-                    </OwlCarousel> */}
+                    </OwlCarousel>
                 </div>
             </div>
         </div>
