@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./nav";
 import Banner from "./banner";
-import InnerPage from "./innerContent";
+import InnerPage from "./carouselsMain";
 
 const HomePage=()=>{
     return(

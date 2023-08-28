@@ -1,8 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 $borderColor: #C2C2C2;
+$lightgrey: #F8F8F8;
 $white: #ffffff;
 $primaryColor: #1B8989;
+$gold: #DBC483;
+
+.dark-grey {
+    color: #333333;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    h2 {
+        font-size: 22px !important;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
 
 .banner {
     img {
@@ -15,15 +31,19 @@ $primaryColor: #1B8989;
         position: absolute;
         left: 0%;
     }
+
+    .area-row {
+        width: 300px;
+        /* margin: 5px auto; */
+        position: relative;
+        top: -220px;
+        left: 31.5%;
+        background: #fff;
+        z-index: 9;
+        border: solid;
+    }
 }
 
-// .filter-container{
-//         background-color: #ffffff;
-//         min-width: 300px;
-//         padding: 38.4px;
-//         z-index: 2;
-//         border-radius: 19.2px;
-// }
 .position-absolute {
     padding: 35px;
     height: auto;
@@ -55,8 +75,30 @@ $primaryColor: #1B8989;
             background-color: #1b89893d;
         }
 
+        .separator {
+            background-color: #adb5bd;
+            height: 25px;
+            margin: 8px 20px auto 0;
+            width: 1px;
+        }
+
         .chk-box {
-            height: 16px !important;
+            height: 20px !important;
+            width: 20px;
+            margin-right: 10px;
+            margin-top: 2px;
+        }
+    }
+
+    .searchWrapper {
+        padding-left: 6px;
+        padding-right: 6px;
+        margin-bottom: 0;
+        height: 48px !important;
+
+        input {
+            margin-bottom: 0 !important;
+            height: auto;
         }
     }
 
@@ -118,13 +160,97 @@ $primaryColor: #1B8989;
 }
 
 .carousel-section {
-    padding-left: 2% !important;
-
     h2 {
         text-transform: uppercase;
     }
 
-    img {
-        width: 130px !important;
+    .broker-story {
+        max-height: 200px;
+
+        .owl-theme {
+            .owl-item {
+                min-width: 150px;
+
+                img {
+                    width: 130px !important;
+                }
+            }
+        }
+    }
+
+    .damac,
+    .secondary {
+        .card {
+            width: 100%;
+            border-radius: 15PX;
+            box-shadow: 0px 4px 4px rgba(81, 81, 81, 0.25);
+            background-color: $lightgrey;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .damac {
+        button {
+            width: 100px;
+            position: absolute;
+            top: 22px;
+            border-radius: 0 25px 25px 25px;
+            border: 0px;
+            background: $gold;
+            color: $white;
+            font-weight: 300;
+            padding: 5px;
+            font-size: 12px;
+        }
+
+        .card-text {
+            font-size: 12px;
+        }
+    }
+
+    .secondary {
+        .user-img {
+            width: 60px !important;
+        }
+
+        .card-text {
+            font-size: 12px;
+        }
+    }
+
+    .promotion {
+        .card {
+            position: relative;
+            .carousel-overlay {
+                position: absolute;
+                opacity: 0.9;
+                width: 45%;
+                height: 100%; 
+            }
+            .card-body{
+                z-index: 9;
+                position: absolute;
+                bottom: 10px;
+                font-size: 16px;
+                line-height: 1.2;
+                left: 15px;
+                button{
+                    background: $gold;
+                    color: $white;
+                    border: 0;
+                    font-size: 12px;
+                    padding: 10px 20px;
+                    height: 40px;
+                    width: 100px;
+                    margin-bottom: 50%;
+                    border-top-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                }
+            }
+        }
+
     }
 }
