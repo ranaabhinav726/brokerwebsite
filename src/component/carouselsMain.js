@@ -19,7 +19,12 @@ import Secondary2 from './images/Secondary2.png';
 import Secondary3 from './images/Secondary3.png';
 import Promotion1 from './images/Promotion1.png';
 import Promotion2 from './images/Promotion2.png';
-import CarouselOverlay from './images/CarouselOverlay.png'
+import CarouselOverlay from './images/CarouselOverlay.png';
+import Partner1 from './images/partner1.png';
+import Partner2 from './images/partner2.png';
+import Partner3 from './images/partner3.png';
+import Partner4 from './images/partner4.png';
+import Partner5 from './images/partner5.png';
 
 
 
@@ -294,6 +299,48 @@ const innerPage = () => {
                                     <p class="card-title"><strong>Exclusive<br />Offers</strong></p>
                                 </div>
                             </div>
+                        </div>
+                    </OwlCarousel>
+                </div>
+            </div>
+            {/* ///////////////////////////////////// OUR PARTNERS ///////////////////////////////////// */}
+            <div className="row my-4 our-partners">
+                <div className="col-xs-12">
+                    <h2 className="mb-4 text-center">OUR PARTNERS</h2>
+                    <OwlCarousel className='owl-theme' loop dots={false} responsiveClass={true} responsive={
+                        {
+                            0: {
+                                items: 1,
+                                loop: true
+                            },
+                            600: {
+                                items: 2.5,
+                                nav: false
+                            },
+                            1000: {
+                                items: 4.5,
+                                nav: false,
+                                loop: true
+                            }
+                        }
+                    }>
+                        <div class='item'>
+                            <img src={Partner1} className="" alt="banner" />
+                        </div>
+                        <div class='item'>
+                            <img src={Partner2} className="" alt="banner" />
+                        </div>
+                        <div class='item'>
+                            <img src={Partner3} className="" alt="banner" />
+                        </div>
+                        <div class='item'>
+                            <img src={Partner4} className="" alt="banner" />
+                        </div>
+                        <div class='item'>
+                            <img src={Partner5} className="" alt="banner" />
+                        </div>
+                        <div class='item'>
+                            <img src={Partner3} className="" alt="banner" />
                         </div>
                     </OwlCarousel>
                 </div>

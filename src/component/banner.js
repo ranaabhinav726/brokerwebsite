@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import Multiselect from "multiselect-react-dropdown";
 import BannerImg from './images/banner.png';
-import OverlayImg from './images/Rectangle 4.png'
+import OverlayImg from './images/Rectangle 4.png';
+import SearchImg from './images/search.png';
 
 const Banner = () => {
-    // const [optiondata] = useState({name: 'Option 1', id: 1},{name: 'Option 2', id: 2})
-    const [showPage, setshowPage] = useState('');
-    const dropdownHandler = (type) => {
-        setshowPage(type)
-    }
+
     return (
         <div>
             <div className="container-fluid banner">
@@ -16,25 +13,16 @@ const Banner = () => {
 
                     <div className="col-12 p-0 overlay position-relative">
                         <div className="position-absolute top-50 start-50 translate-middle">
-                            <div className="row filter-first-row">
+                            <div className="row filter-first-row mb-2">
                                 <div className="col">
-                                    <button type="button" className="btn active-btn">Rent</button>
-                                </div>
-                                <div className="col">
-                                    <button type="button" className="btn">Buy</button>
-                                </div>
-                                <div className="col-md-9 d-flex">
-                                    <div className="separator"></div>
-                                    <div className="form-check">
-                                        <input className="form-check-input chk-box" type="checkbox" value="" id="flexCheckDefault" />
-                                        <label className="form-check-label" for="flexCheckDefault">
-                                            Show more search options
-                                        </label>
+                                    <div className="d-grid gap-1 d-md-flex justify-content-md-center">
+                                        <button className="btn active-btn" type="button">Buy</button>
+                                        <button className="btn" type="button">Rent</button>
                                     </div>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col">
+                            <div className="row colored-row">
+                                <div className="col-md-5">
                                     <Multiselect
                                         // options={'xyz'}
                                         // selectedValues={'xyz'} 
@@ -70,40 +58,7 @@ const Banner = () => {
                                         <option value="3">Three</option>
                                     </select>
                                 </div>
-                                <div className="col-md-2">
-                                    <select className="form-select" aria-label="Default select example">
-                                        <option selected>Price</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div className="col-md-1">
-                                    <button type="button" className="btn search-btn">&#xF52A;</button>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-md-3">
-                                    <select className="form-select" aria-label="Default select example">
-                                        <option selected>All Furnishings</option>
-                                        <option value="All furnishings">All furnishings</option>
-                                        <option value="Furnished">Furnished</option>
-                                        <option value="Unfurnished">Unfurnished</option>
-                                        <option value="Partly furnished">Partly furnished</option>
-                                    </select>
-                                </div>
-                                <div className="col-md-2">
-                                    {/* <select className="form-select" onClick={() => dropdownHandler('area')}>
-                                        <option>
-                                            
-                                        </option>
-                                    </select> */}
-                                    <div class="input-group mb-3">
-                                        {/* <input type="text" class="form-control" placeholder="Username" onClick={() => dropdownHandler('area')}/> */}
-                                        <button type="button" class="btn btn-primary" onClick={() => dropdownHandler('area')}>Primary</button>                                    </div>
-
-                                </div>
-                                <div className="col-md-2">
+                                <div className="col">
                                     <select className="form-select" aria-label="Default select example">
                                         <option selected>Price</option>
                                         <option value="1">One</option>
@@ -112,19 +67,17 @@ const Banner = () => {
                                     </select>
                                 </div>
                                 <div className="col">
-                                    <Multiselect
-                                        // options={'xyz'}
-                                        // selectedValues={'xyz'} 
-                                        // onSelect={this.onSelect} 
-                                        // onRemove={this.onRemove} 
-                                        displayValue="name"
-                                        className=""
-                                    />
+                                    <button type="button" className="btn search-btn">
+                                        <img src={SearchImg} className="" alt="banner" />
+                                    </button>
                                 </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <div className="float-end">Show more search options </div>
+                                <div className="col-md-12 mt-2">
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                        <label className="form-check-label" for="flexCheckDefault">
+                                            Show more search options
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -134,17 +87,6 @@ const Banner = () => {
                     </div>
 
                 </div>
-                {showPage === 'area' ?
-                    <div className="row area-row">
-                        <div className="">
-                            <div className="col">  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
-                            </div>
-                            <div className="col-md-1">-</div>
-                            <div className="col">  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
-                            </div>
-                        </div>
-                    </div>
-                    : ""}
             </div>
 
         </div>
