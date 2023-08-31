@@ -14,7 +14,7 @@ const HomePage=()=>{
             <InnerPage/>
             <Testimonials/>
             <Appdownloads />
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }
