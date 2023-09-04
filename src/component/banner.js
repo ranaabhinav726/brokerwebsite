@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Multiselect from "multiselect-react-dropdown";
 import BannerImg from './images/banner.png';
 import OverlayImg from './images/Rectangle 4.png';
@@ -7,11 +7,11 @@ import SearchImg from './images/search.png';
 const Banner = () => {
 
     return (
-        <div>
+        <div >
             <div className="container-fluid banner">
                 <div className="row">
 
-                    <div className="col-12 p-0 overlay position-relative">
+                    <div className="col-12 p-0 overlay position-relative" id="filterId">
                         <div className="position-absolute top-50 start-50 translate-middle">
                             <div className="row filter-first-row mb-2">
                                 <div className="col">

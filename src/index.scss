@@ -156,28 +156,33 @@ body {
     h2 {
         text-transform: uppercase;
     }
-
-    .broker-story {
-        max-height: 200px;
-
-        .owl-theme {
-            .owl-item {
-                min-width: 150px;
-
-                img {
-                    width: 130px !important;
-                    margin: auto;
-                }
-            }
+    h6{
+        a{
+            color: $primaryColor;
+            text-decoration: none !important;
         }
     }
+
+    // .broker-story {
+    //     .owl-theme {
+    //         .owl-item {
+    //             min-width: 150px;
+
+    //             img {
+    //                 width: 130px !important;
+    //                 margin: auto;
+    //             }
+    //         }
+    //     }
+    // }
 
     .damac,
     .secondary {
         .card {
             width: 100%;
             border-radius: 15PX;
-            box-shadow: 0px 4px 4px rgba(81, 81, 81, 0.25);
+            box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+            margin-bottom: 20px;
             background-color: $lightgrey;
 
             img {
@@ -276,6 +281,9 @@ body {
         text-align: center;
         color: $textcolor;
         max-width: 350px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
 
         .card-text {
             text-transform: uppercase;
@@ -329,7 +337,9 @@ body {
         max-width: 250px;
     }
 }
-
+.primary-text {
+    color: $primaryColor;
+}
 .footer {
     font-size: 16px;
     margin-top: 5%;
@@ -339,10 +349,6 @@ body {
     h3 {
         font-weight: normal;
         margin-bottom: 50px;
-    }
-
-    .primary-text {
-        color: $primaryColor;
     }
 
     ul {
@@ -361,6 +367,21 @@ body {
             button {
                 border-radius: 3px;
                 background: $borderColor;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .broker-story {
+        .owl-theme {
+            .owl-item {
+
+                img {
+                    width: 130px !important;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
             }
         }
     }

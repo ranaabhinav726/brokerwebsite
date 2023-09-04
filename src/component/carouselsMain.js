@@ -33,7 +33,9 @@ const innerPage = () => {
         <div className="container carousel-section">
             <div className="row my-4 broker-story">
                 <div className="col-xs-12">
-                    <h2 className="mb-4">Broker story</h2>
+                    <div className="d-flex my-4">
+                        <h2 className="float-start">Broker story</h2>
+                    </div>
                     <OwlCarousel className='owl-theme' margin={15} loop dots={false} responsiveClass={true} responsive={
                         {
                             0: {
@@ -41,7 +43,7 @@ const innerPage = () => {
                                 loop: true
                             },
                             600: {
-                                items: 5,
+                                items: 4,
                                 nav: false
                             },
                             1000: {
@@ -53,39 +55,62 @@ const innerPage = () => {
                     }>
                         <div class='item'>
                             <img src={Round1} className="" alt="banner" />
+                            <p className="text-center">Brokkerspot</p>
                         </div>
                         <div class='item'>
                             <img src={Round2} className="" alt="banner" />
+                            <p className="text-center">Brokkerspot</p>
+
                         </div>
                         <div class='item'>
                             <img src={Round3} className="" alt="banner" />
+                            <p className="text-center">Brokkerspot</p>
+
                         </div>
                         <div class='item'>
                             <img src={Round4} className="" alt="banner" />
+                            <p className="text-center">Brokkerspot</p>
+
                         </div>
                         <div class='item'>
                             <img src={Round5} className="" alt="banner" />
+                            <p className="text-center">Brokkerspot</p>
+
                         </div>
                         <div class='item'>
                             <img src={Round6} className="" alt="banner" />
+                            <p className="text-center">Brokkerspot</p>
+
                         </div>
                         <div class='item'>
                             <img src={Round7} className="" alt="banner" />
+                            <p className="text-center">Brokkerspot</p>
+
                         </div>
                         <div class='item'>
                             <img src={Round8} className="" alt="banner" />
+                            <p className="text-center">Brokkerspot</p>
+
                         </div>
                         <div class='item'>
                             <img src={Round9} className="" alt="banner" />
+                            <p className="text-center">Brokkerspot</p>
+
                         </div>
                         <div class='item'>
                             <img src={Round1} className="" alt="banner" />
+                            <p className="text-center">Brokkerspot</p>
+
                         </div>
                         <div class='item'>
                             <img src={Round2} className="" alt="banner" />
+                            <p className="text-center">Brokkerspot</p>
+
                         </div>
                         <div class='item'>
                             <img src={Round3} className="" alt="banner" />
+                            <p className="text-center">Brokkerspot</p>
+
                         </div>
                     </OwlCarousel>
                 </div>
@@ -93,7 +118,10 @@ const innerPage = () => {
             {/* ///////////////////////////////////// DAMAC ///////////////////////////////////// */}
             <div className="row my-4 damac">
                 <div className="col-xs-12">
-                    <h2 className="mb-4">DAMAC</h2>
+                    <div className="d-flex my-4">
+                        <h2 className="">DAMAC</h2>
+                        <h6 className="ms-auto"><a href="/">VIEW ALL</a></h6>
+                    </div>
                     <OwlCarousel className='owl-theme' margin={15} loop dots={false} responsiveClass={true} responsive={
                         {
                             0: {
@@ -161,7 +189,10 @@ const innerPage = () => {
             {/* ///////////////////////////////////// SECONDARY CAROUSEL ///////////////////////////////////// */}
             <div className="row my-4 secondary">
                 <div className="col-xs-12">
-                    <h2 className="mb-4">SECONDARY</h2>
+                <div className="d-flex my-4">
+                        <h2 className="">SECONDARY</h2>
+                        <h6 className="ms-auto"><a href="/">VIEW ALL</a></h6>
+                    </div>
                     <OwlCarousel className='owl-theme' margin={15} loop dots={false} responsiveClass={true} responsive={
                         {
                             0: {
@@ -184,7 +215,8 @@ const innerPage = () => {
                                 <div class="card-body">
                                     <div className="d-flex">
                                         <img src={Round1} className="user-img" alt="banner" />
-                                        <p>Aman</p>
+                                        <p className="my-auto">Aman</p>
+                                        <p className="my-auto ms-auto primary-text">For Sell</p>
                                     </div>
                                 </div>
                                 <img src={Secondary1} class="card-img-top" alt="..." />
@@ -200,7 +232,8 @@ const innerPage = () => {
                                 <div class="card-body">
                                     <div className="d-flex">
                                         <img src={Round1} className="user-img" alt="banner" />
-                                        <p>Aman</p>
+                                        <p className="my-auto">Aman</p>
+                                        <p className="my-auto ms-auto primary-text">For Sell</p>
                                     </div>
                                 </div>
                                 <img src={Secondary2} class="card-img-top" alt="..." />
@@ -216,7 +249,9 @@ const innerPage = () => {
                                 <div class="card-body">
                                     <div className="d-flex">
                                         <img src={Round1} className="user-img" alt="banner" />
-                                        <p>Aman</p>
+                                        <p className="my-auto">Aman</p>
+                                        <p className="my-auto ms-auto primary-text">For Sell</p>
+
                                     </div>
                                 </div>
                                 <img src={Secondary3} class="card-img-top" alt="..." />
@@ -232,7 +267,9 @@ const innerPage = () => {
                                 <div class="card-body">
                                     <div className="d-flex">
                                         <img src={Round1} className="user-img" alt="banner" />
-                                        <p>Aman</p>
+                                        <p className="my-auto">Aman</p>
+                                        <p className="my-auto ms-auto primary-text">For Sell</p>
+
                                     </div>
                                 </div>
                                 <img src={Secondary1} class="card-img-top" alt="..." />
@@ -249,7 +286,10 @@ const innerPage = () => {
             {/* ///////////////////////////////////// PROMOTION CAROUSEL ///////////////////////////////////// */}
             <div className="row my-4 promotion">
                 <div className="col-xs-12">
-                    <h2 className="mb-4">PROMOTION</h2>
+                <div className="d-flex my-4">
+                        <h2 className="">PROMOTION</h2>
+                        <h6 className="ms-auto"><a href="/">VIEW ALL</a></h6>
+                    </div>
                     <OwlCarousel className='owl-theme' margin={15} loop dots={false} responsiveClass={true} responsive={
                         {
                             0: {
@@ -273,7 +313,7 @@ const innerPage = () => {
                                 <img src={Promotion1} class="card-img-top" alt="..." />
                                 <img src={CarouselOverlay} className="carousel-overlay" alt="banner" />
                                 <div class="card-body">
-                                     <button>80 UNITS</button>
+                                    <button>80 UNITS</button>
                                     <p class="card-title"><strong>Exclusive<br />Offers</strong></p>
                                 </div>
 
@@ -285,7 +325,7 @@ const innerPage = () => {
                                 <img src={Promotion2} class="card-img-top" alt="..." />
                                 <img src={CarouselOverlay} className="carousel-overlay" alt="banner" />
                                 <div class="card-body">
-                                     <button>80 UNITS</button>
+                                    <button>80 UNITS</button>
                                     <p class="card-title"><strong>Exclusive<br />Offers</strong></p>
                                 </div>
                             </div>
@@ -295,7 +335,7 @@ const innerPage = () => {
                                 <img src={Promotion1} class="card-img-top" alt="..." />
                                 <img src={CarouselOverlay} className="carousel-overlay" alt="banner" />
                                 <div class="card-body">
-                                     <button>80 UNITS</button>
+                                    <button>80 UNITS</button>
                                     <p class="card-title"><strong>Exclusive<br />Offers</strong></p>
                                 </div>
                             </div>
