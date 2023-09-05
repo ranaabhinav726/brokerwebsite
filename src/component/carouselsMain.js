@@ -20,11 +20,8 @@ import Secondary3 from './images/Secondary3.png';
 import Promotion1 from './images/Promotion1.png';
 import Promotion2 from './images/Promotion2.png';
 import CarouselOverlay from './images/CarouselOverlay.png';
-import Partner1 from './images/partner1.png';
-import Partner2 from './images/partner2.png';
-import Partner3 from './images/partner3.png';
-import Partner4 from './images/partner4.png';
-import Partner5 from './images/partner5.png';
+import BedroomIcon from './images/bedroom-icon.png';
+import AreaIcon from './images/area-icon.png';
 
 
 
@@ -144,9 +141,15 @@ const innerPage = () => {
                                 <img src={Damac1} class="card-img-top" alt="..." />
                                 <button>80 UNITS</button>
                                 <div class="card-body">
-                                    <p class="card-title">AED <strong>100,0000</strong></p>
+                                    <div className="d-flex">
+                                        <p class="card-title">AED <strong>100,0000</strong></p>
+                                        <p className="card-text ms-auto">15 min ago</p>
+                                    </div>
                                     <p className="dark-grey"><strong>SAFA / TWO</strong></p>
-                                    <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                    <div className="d-flex">
+                                        <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                        <p className="arrow-p lh-1">&#10095;</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -155,9 +158,15 @@ const innerPage = () => {
                                 <img src={Damac2} class="card-img-top" alt="..." />
                                 <button>80 UNITS</button>
                                 <div class="card-body">
-                                    <p class="card-title">AED <strong>100,0000</strong></p>
+                                    <div className="d-flex">
+                                        <p class="card-title">AED <strong>100,0000</strong></p>
+                                        <p className="card-text ms-auto">15 min ago</p>
+                                    </div>
                                     <p className="dark-grey"><strong>SAFA / TWO</strong></p>
-                                    <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                    <div className="d-flex">
+                                        <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                        <p className="arrow-p lh-1">&#10095;</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -166,9 +175,15 @@ const innerPage = () => {
                                 <img src={Damac3} class="card-img-top" alt="..." />
                                 <button>80 UNITS</button>
                                 <div class="card-body">
-                                    <p class="card-title">AED <strong>100,0000</strong></p>
+                                    <div className="d-flex">
+                                        <p class="card-title">AED <strong>100,0000</strong></p>
+                                        <p className="card-text ms-auto">15 min ago</p>
+                                    </div>
                                     <p className="dark-grey"><strong>SAFA / TWO</strong></p>
-                                    <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                    <div className="d-flex">
+                                        <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                        <p className="arrow-p lh-1">&#10095;</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -177,9 +192,15 @@ const innerPage = () => {
                                 <img src={Damac1} class="card-img-top" alt="..." />
                                 <button>80 UNITS</button>
                                 <div class="card-body">
-                                    <p class="card-title">AED <strong>100,0000</strong></p>
+                                    <div className="d-flex">
+                                        <p class="card-title">AED <strong>100,0000</strong></p>
+                                        <p className="card-text ms-auto">15 min ago</p>
+                                    </div>
                                     <p className="dark-grey"><strong>SAFA / TWO</strong></p>
-                                    <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                    <div className="d-flex">
+                                        <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                        <p className="arrow-p lh-1">&#10095;</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +210,7 @@ const innerPage = () => {
             {/* ///////////////////////////////////// SECONDARY CAROUSEL ///////////////////////////////////// */}
             <div className="row my-4 secondary">
                 <div className="col-xs-12">
-                <div className="d-flex my-4">
+                    <div className="d-flex my-4">
                         <h2 className="">SECONDARY</h2>
                         <h6 className="ms-auto"><a href="/">VIEW ALL</a></h6>
                     </div>
@@ -215,15 +236,24 @@ const innerPage = () => {
                                 <div class="card-body">
                                     <div className="d-flex">
                                         <img src={Round1} className="user-img" alt="banner" />
-                                        <p className="my-auto">Aman</p>
+                                        <p className="my-auto ms-2">Aman</p>
                                         <p className="my-auto ms-auto primary-text">For Sell</p>
                                     </div>
                                 </div>
                                 <img src={Secondary1} class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <p class="card-title">AED <strong>100,0000</strong></p>
-                                    <p className="dark-grey"><strong>SAFA / TWO</strong></p>
-                                    <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                    <p className="dark-grey mb-2"><strong>WOODEN HOME</strong></p>
+                                    <div className="d-flex mb-2">
+                                        <img src={BedroomIcon} className="bed" alt="" />
+                                        <p className="ms-1">3 Bedroom</p>
+                                        <img src={AreaIcon} className="area ms-5" alt="" />
+                                        <p className="ms-1">848/ Sqft</p>
+                                    </div>
+                                    <div className="d-flex">
+                                        <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                        <p className="arrow-p">&#10095;</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -232,15 +262,24 @@ const innerPage = () => {
                                 <div class="card-body">
                                     <div className="d-flex">
                                         <img src={Round1} className="user-img" alt="banner" />
-                                        <p className="my-auto">Aman</p>
+                                        <p className="my-auto ms-2">Aman</p>
                                         <p className="my-auto ms-auto primary-text">For Sell</p>
                                     </div>
                                 </div>
                                 <img src={Secondary2} class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <p class="card-title">AED <strong>100,0000</strong></p>
-                                    <p className="dark-grey"><strong>SAFA / TWO</strong></p>
-                                    <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                    <p className="dark-grey mb-2"><strong>WOODEN HOME</strong></p>
+                                    <div className="d-flex mb-2">
+                                        <img src={BedroomIcon} className="bed" alt="" />
+                                        <p className="ms-1">3 Bedroom</p>
+                                        <img src={AreaIcon} className="area ms-5" alt="" />
+                                        <p className="ms-1">848/ Sqft</p>
+                                    </div>
+                                    <div className="d-flex">
+                                        <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                        <p className="arrow-p">&#10095;</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -249,16 +288,24 @@ const innerPage = () => {
                                 <div class="card-body">
                                     <div className="d-flex">
                                         <img src={Round1} className="user-img" alt="banner" />
-                                        <p className="my-auto">Aman</p>
+                                        <p className="my-auto ms-2">Aman</p>
                                         <p className="my-auto ms-auto primary-text">For Sell</p>
-
                                     </div>
                                 </div>
                                 <img src={Secondary3} class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <p class="card-title">AED <strong>100,0000</strong></p>
-                                    <p className="dark-grey"><strong>SAFA / TWO</strong></p>
-                                    <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                    <p className="dark-grey mb-2"><strong>WOODEN HOME</strong></p>
+                                    <div className="d-flex mb-2">
+                                        <img src={BedroomIcon} className="bed" alt="" />
+                                        <p className="ms-1">3 Bedroom</p>
+                                        <img src={AreaIcon} className="area ms-5" alt="" />
+                                        <p className="ms-1">848/ Sqft</p>
+                                    </div>
+                                    <div className="d-flex">
+                                        <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                        <p className="arrow-p">&#10095;</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -267,16 +314,24 @@ const innerPage = () => {
                                 <div class="card-body">
                                     <div className="d-flex">
                                         <img src={Round1} className="user-img" alt="banner" />
-                                        <p className="my-auto">Aman</p>
+                                        <p className="my-auto ms-2">Aman</p>
                                         <p className="my-auto ms-auto primary-text">For Sell</p>
-
                                     </div>
                                 </div>
                                 <img src={Secondary1} class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <p class="card-title">AED <strong>100,0000</strong></p>
-                                    <p className="dark-grey"><strong>SAFA / TWO</strong></p>
-                                    <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                    <p className="dark-grey mb-2"><strong>WOODEN HOME</strong></p>
+                                    <div className="d-flex mb-2">
+                                        <img src={BedroomIcon} className="bed" alt="" />
+                                        <p className="ms-1">3 Bedroom</p>
+                                        <img src={AreaIcon} className="area ms-5" alt="" />
+                                        <p className="ms-1">848/ Sqft</p>
+                                    </div>
+                                    <div className="d-flex">
+                                        <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                        <p className="arrow-p">&#10095;</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -286,7 +341,7 @@ const innerPage = () => {
             {/* ///////////////////////////////////// PROMOTION CAROUSEL ///////////////////////////////////// */}
             <div className="row my-4 promotion">
                 <div className="col-xs-12">
-                <div className="d-flex my-4">
+                    <div className="d-flex my-4">
                         <h2 className="">PROMOTION</h2>
                         <h6 className="ms-auto"><a href="/">VIEW ALL</a></h6>
                     </div>
@@ -339,48 +394,6 @@ const innerPage = () => {
                                     <p class="card-title"><strong>Exclusive<br />Offers</strong></p>
                                 </div>
                             </div>
-                        </div>
-                    </OwlCarousel>
-                </div>
-            </div>
-            {/* ///////////////////////////////////// OUR PARTNERS ///////////////////////////////////// */}
-            <div className="row my-4 our-partners">
-                <div className="col-xs-12">
-                    <h2 className="mb-4 text-center">OUR PARTNERS</h2>
-                    <OwlCarousel className='owl-theme' loop dots={false} responsiveClass={true} responsive={
-                        {
-                            0: {
-                                items: 1,
-                                loop: true
-                            },
-                            600: {
-                                items: 2.5,
-                                nav: false
-                            },
-                            1000: {
-                                items: 4.5,
-                                nav: false,
-                                loop: true
-                            }
-                        }
-                    }>
-                        <div class='item'>
-                            <img src={Partner1} className="" alt="banner" />
-                        </div>
-                        <div class='item'>
-                            <img src={Partner2} className="" alt="banner" />
-                        </div>
-                        <div class='item'>
-                            <img src={Partner3} className="" alt="banner" />
-                        </div>
-                        <div class='item'>
-                            <img src={Partner4} className="" alt="banner" />
-                        </div>
-                        <div class='item'>
-                            <img src={Partner5} className="" alt="banner" />
-                        </div>
-                        <div class='item'>
-                            <img src={Partner3} className="" alt="banner" />
                         </div>
                     </OwlCarousel>
                 </div>

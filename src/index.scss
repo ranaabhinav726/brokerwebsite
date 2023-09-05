@@ -74,6 +74,17 @@ body {
         .colored-row {
             padding: 15px 10px;
 
+            .col-md-5,
+            .col-md-2,
+            .col {
+                padding: 0 !important;
+            }
+
+            .col-md-2,
+            .col {
+                margin-left: 10px;
+            }
+
             button {
                 width: 48px;
                 height: 48px;
@@ -156,8 +167,9 @@ body {
     h2 {
         text-transform: uppercase;
     }
-    h6{
-        a{
+
+    h6 {
+        a {
             color: $primaryColor;
             text-decoration: none !important;
         }
@@ -208,6 +220,13 @@ body {
         .card-text {
             font-size: 12px;
         }
+
+        .d-flex {
+            .card-text {
+                text-transform: uppercase;
+                margin-bottom: 0 !important;
+            }
+        }
     }
 
     .secondary {
@@ -217,13 +236,32 @@ body {
 
         .card-text {
             font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .card-body {
+            .d-flex {
+                p {
+                    font-size: 12px;
+                    margin-bottom: 0;
+                    line-height: 2.3;
+                }
+
+                .bed,
+                .area {
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+
         }
     }
 
     .promotion {
         .card {
             position: relative;
-            box-shadow: 0px 9px 5px rgba(67, 67, 67, 0.25);
+            box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+            margin-bottom: 15px;
 
             .carousel-overlay {
                 position: absolute;
@@ -256,22 +294,13 @@ body {
         }
 
     }
+}
 
-    .our-partners {
-        height: 200px;
-
-        .item {
-            height: 130px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                width: 150px !important;
-                display: block;
-                margin: auto;
-            }
-        }
+.our-partners {
+    img {
+        width: 150px !important;
+        display: block;
+        margin: auto;
     }
 }
 
@@ -337,9 +366,18 @@ body {
         max-width: 250px;
     }
 }
+
 .primary-text {
     color: $primaryColor;
 }
+
+.arrow-p {
+    color: $primaryColor;
+    margin-left: auto !important;
+    margin-bottom: 0 !important;
+    font-size: 16px !important;
+}
+
 .footer {
     font-size: 16px;
     margin-top: 5%;

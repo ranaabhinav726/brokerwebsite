@@ -59,7 +59,7 @@ const Banner = () => {
                                     </select>
                                 </div>
                                 <div className="col">
-                                    <select className="form-select" aria-label="Default select example">
+                                    <select className="form-select" aria-label="Default select example" style={{minWidth: '100px'}}>
                                         <option selected>Price</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
