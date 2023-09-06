@@ -36,7 +36,7 @@ const innerPage = () => {
                     <OwlCarousel className='owl-theme' margin={15} loop dots={false} responsiveClass={true} responsive={
                         {
                             0: {
-                                items: 1,
+                                items: 2,
                                 loop: true
                             },
                             600: {

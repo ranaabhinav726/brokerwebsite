@@ -297,11 +297,23 @@ body {
 }
 
 .our-partners {
-    img {
-        width: 150px !important;
-        display: block;
-        margin: auto;
+    .img-bg {
+        background-color: #efefef;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        width: 90%;
+        height: 100%;
+        min-height: 120px;
+        display: flex;
+
+        img {
+            width: 125px !important;
+            display: block;
+            margin: auto;
+        }
     }
+
 }
 
 .testimonials {
