@@ -115,6 +115,7 @@ const innerPage = ({ DAMACData }) => {
                 </div>
             </div>
             {/* ///////////////////////////////////// DAMAC ///////////////////////////////////// */}
+            {DAMACData ? 
             <div className="row my-4 damac">
                 <div className="col-xs-12">
                     <div className="d-flex my-4">
@@ -230,7 +231,9 @@ const innerPage = ({ DAMACData }) => {
                         </div> */}
                     </OwlCarousel>
                 </div>
+               
             </div>
+            :""}
             {/* ///////////////////////////////////// SECONDARY CAROUSEL ///////////////////////////////////// */}
             <div className="row my-4 secondary">
                 <div className="col-xs-12">
