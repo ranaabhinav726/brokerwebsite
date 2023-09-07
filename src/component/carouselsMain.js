@@ -25,7 +25,9 @@ import AreaIcon from './images/area-icon.png';
 
 
 
-const innerPage = () => {
+
+const innerPage = ({ DAMACData }) => {
+
     return (
         <div className="container carousel-section">
             <div className="row my-4 broker-story">
@@ -136,7 +138,29 @@ const innerPage = () => {
                             }
                         }
                     }>
-                        <div class='item'>
+
+                        {DAMACData && DAMACData.map((data, i) => {
+                            return (
+                                <div class='item'>
+                                    <div class="card">
+                                        <img src={data.image} class="card-img-top" alt="..." />
+                                        <button>80 UNITS</button>
+                                        <div class="card-body">
+                                            <div className="d-flex">
+                                                <p class="card-title">AED <strong>100,0000</strong></p>
+                                                <p className="card-text ms-auto">15 min ago</p>
+                                            </div>
+                                            <p className="dark-grey"><strong>{data.name}</strong></p>
+                                            <div className="d-flex">
+                                                <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                                <p className="arrow-p lh-1">&#10095;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                        {/* <div class='item'>
                             <div class="card">
                                 <img src={Damac1} class="card-img-top" alt="..." />
                                 <button>80 UNITS</button>
@@ -203,7 +227,7 @@ const innerPage = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </OwlCarousel>
                 </div>
             </div>
