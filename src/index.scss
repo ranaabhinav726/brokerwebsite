@@ -301,7 +301,6 @@ body {
         background-color: #efefef;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 15px;
         width: 90%;
         height: 100%;
         min-height: 120px;
@@ -433,6 +432,51 @@ body {
                     margin-right: auto;
                 }
             }
+        }
+    }
+
+}
+
+.login-type-modal {
+    top: 25%;
+    .modal-content {
+        border-radius: 5px;
+        border: 0.5px solid $primaryColor;
+        max-width: 330px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.sm-banner {
+    .buy-sell {
+        .btn {
+            border: solid 1px $primaryColor;
+            border-radius: 25px;
+            height: 37px;
+            width: 60px;
+            z-index: 9;
+            text-transform: uppercase;
+        }
+
+        .active-btn {
+            color: $white;
+            background-color: $primaryColor;
+            text-decoration: underline;
+        }
+    }
+
+    .form-check-label {
+        color: $primaryColor !important;
+    }
+
+    .search-btn {
+        background: $primaryColor;
+        color: $white;
+        height: 48px;
+
+        img {
+            width: 25px !important;
         }
     }
 }
