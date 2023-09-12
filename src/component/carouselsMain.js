@@ -26,7 +26,7 @@ import AreaIcon from './images/area-icon.png';
 
 
 
-const innerPage = ({ DAMACData }) => {
+const innerPage = ({ DAMACData, promotionDataState }) => {
 
     return (
         <div className="container carousel-section">
@@ -115,53 +115,53 @@ const innerPage = ({ DAMACData }) => {
                 </div>
             </div>
             {/* ///////////////////////////////////// DAMAC ///////////////////////////////////// */}
-            {DAMACData ? 
-            <div className="row my-4 damac">
-                <div className="col-xs-12">
-                    <div className="d-flex my-4">
-                        <h2 className="">DAMAC</h2>
-                        <h6 className="ms-auto"><a href="/">VIEW ALL</a></h6>
-                    </div>
-                    <OwlCarousel className='owl-theme' margin={15} loop dots={false} responsiveClass={true} responsive={
-                        {
-                            0: {
-                                items: 1,
-                                loop: true
-                            },
-                            600: {
-                                items: 2,
-                                nav: false
-                            },
-                            1000: {
-                                items: 3.5,
-                                nav: false,
-                                loop: true
+            {DAMACData ?
+                <div className="row my-4 damac">
+                    <div className="col-xs-12">
+                        <div className="d-flex my-4">
+                            <h2 className="">DAMAC</h2>
+                            <h6 className="ms-auto"><a href="/">VIEW ALL</a></h6>
+                        </div>
+                        <OwlCarousel className='owl-theme' margin={15} loop dots={false} responsiveClass={true} responsive={
+                            {
+                                0: {
+                                    items: 1,
+                                    loop: true
+                                },
+                                600: {
+                                    items: 2,
+                                    nav: false
+                                },
+                                1000: {
+                                    items: 3.5,
+                                    nav: false,
+                                    loop: true
+                                }
                             }
-                        }
-                    }>
+                        }>
 
-                        {DAMACData && DAMACData.map((data, i) => {
-                            return (
-                                <div class='item'>
-                                    <div class="card">
-                                        <img src={data.image} class="card-img-top" alt="..." />
-                                        <button>80 UNITS</button>
-                                        <div class="card-body">
-                                            <div className="d-flex">
-                                                <p class="card-title">AED <strong>100,0000</strong></p>
-                                                <p className="card-text ms-auto">15 min ago</p>
-                                            </div>
-                                            <p className="dark-grey"><strong>{data.name}</strong></p>
-                                            <div className="d-flex">
-                                                <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
-                                                <p className="arrow-p lh-1">&#10095;</p>
+                            {DAMACData && DAMACData.map((data, i) => {
+                                return (
+                                    <div class='item'>
+                                        <div class="card">
+                                            <img src={data.image} class="card-img-top" alt="..." />
+                                            <button>80 UNITS</button>
+                                            <div class="card-body">
+                                                <div className="d-flex">
+                                                    <p class="card-title">AED <strong>100,0000</strong></p>
+                                                    <p className="card-text ms-auto">15 min ago</p>
+                                                </div>
+                                                <p className="dark-grey"><strong>{data.name}</strong></p>
+                                                <div className="d-flex">
+                                                    <p class="card-text">DUBAI | UNITED ARAB EMIRATES</p>
+                                                    <p className="arrow-p lh-1">&#10095;</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            )
-                        })}
-                        {/* <div class='item'>
+                                )
+                            })}
+                            {/* <div class='item'>
                             <div class="card">
                                 <img src={Damac1} class="card-img-top" alt="..." />
                                 <button>80 UNITS</button>
@@ -229,11 +229,11 @@ const innerPage = ({ DAMACData }) => {
                                 </div>
                             </div>
                         </div> */}
-                    </OwlCarousel>
+                        </OwlCarousel>
+                    </div>
+
                 </div>
-               
-            </div>
-            :""}
+                : ""}
             {/* ///////////////////////////////////// SECONDARY CAROUSEL ///////////////////////////////////// */}
             <div className="row my-4 secondary">
                 <div className="col-xs-12">
@@ -366,65 +366,84 @@ const innerPage = ({ DAMACData }) => {
                 </div>
             </div>
             {/* ///////////////////////////////////// PROMOTION CAROUSEL ///////////////////////////////////// */}
-            <div className="row my-4 promotion">
-                <div className="col-xs-12">
-                    <div className="d-flex my-4">
-                        <h2 className="">PROMOTION</h2>
-                        <h6 className="ms-auto"><a href="/">VIEW ALL</a></h6>
-                    </div>
-                    <OwlCarousel className='owl-theme' margin={15} loop dots={false} responsiveClass={true} responsive={
-                        {
-                            0: {
-                                items: 1,
-                                loop: true
-                            },
-                            600: {
-                                items: 1,
-                                nav: false
-                            },
-                            1000: {
-                                items: 2.1,
-                                nav: false,
-                                loop: true
+            {promotionDataState ?
+                <div className="row my-4 promotion">
+                    <div className="col-xs-12">
+                        <div className="d-flex my-4">
+                            <h2 className="">PROMOTION</h2>
+                            <h6 className="ms-auto"><a href="/">VIEW ALL</a></h6>
+                        </div>
+                        <OwlCarousel className='owl-theme' margin={15} loop dots={false} responsiveClass={true} responsive={
+                            {
+                                0: {
+                                    items: 1,
+                                    loop: true
+                                },
+                                600: {
+                                    items: 1,
+                                    nav: false
+                                },
+                                1000: {
+                                    items: 2.1,
+                                    nav: false,
+                                    loop: true
+                                }
                             }
-                        }
-                    }>
-                        <div class='item'>
-                            <div class="card">
+                        }>
+                            {promotionDataState && promotionDataState.map((data, i) => {
+                                console.log(data)
+                                return (
+                                    <div class='item'>
+                                        <div class="card">
 
-                                <img src={Promotion1} class="card-img-top" alt="..." />
-                                <img src={CarouselOverlay} className="carousel-overlay" alt="banner" />
-                                <div class="card-body">
-                                    <button>80 UNITS</button>
-                                    <p class="card-title"><strong>Exclusive<br />Offers</strong></p>
-                                </div>
+                                            <img src={data.image} class="card-img-top" alt="..." />
+                                            <img src={CarouselOverlay} className="carousel-overlay" alt="banner" />
+                                            <div class="card-body">
+                                                <button>80 UNITS</button>
+                                                <p class="card-title"><strong>{data.name}</strong></p>
+                                            </div>
 
-                            </div>
-                        </div>
-                        <div class='item'>
-                            <div class="card">
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                            {/* <div class='item'>
+                                <div class="card">
 
-                                <img src={Promotion2} class="card-img-top" alt="..." />
-                                <img src={CarouselOverlay} className="carousel-overlay" alt="banner" />
-                                <div class="card-body">
-                                    <button>80 UNITS</button>
-                                    <p class="card-title"><strong>Exclusive<br />Offers</strong></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='item'>
-                            <div class="card">
-                                <img src={Promotion1} class="card-img-top" alt="..." />
-                                <img src={CarouselOverlay} className="carousel-overlay" alt="banner" />
-                                <div class="card-body">
-                                    <button>80 UNITS</button>
-                                    <p class="card-title"><strong>Exclusive<br />Offers</strong></p>
+                                    <img src={Promotion1} class="card-img-top" alt="..." />
+                                    <img src={CarouselOverlay} className="carousel-overlay" alt="banner" />
+                                    <div class="card-body">
+                                        <button>80 UNITS</button>
+                                        <p class="card-title"><strong>Exclusive<br />Offers</strong></p>
+                                    </div>
+
                                 </div>
                             </div>
-                        </div>
-                    </OwlCarousel>
+                            <div class='item'>
+                                <div class="card">
+
+                                    <img src={Promotion2} class="card-img-top" alt="..." />
+                                    <img src={CarouselOverlay} className="carousel-overlay" alt="banner" />
+                                    <div class="card-body">
+                                        <button>80 UNITS</button>
+                                        <p class="card-title"><strong>Exclusive<br />Offers</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='item'>
+                                <div class="card">
+                                    <img src={Promotion1} class="card-img-top" alt="..." />
+                                    <img src={CarouselOverlay} className="carousel-overlay" alt="banner" />
+                                    <div class="card-body">
+                                        <button>80 UNITS</button>
+                                        <p class="card-title"><strong>Exclusive<br />Offers</strong></p>
+                                    </div>
+                                </div>
+                            </div> */}
+                        </OwlCarousel>
+                    </div>
                 </div>
-            </div>
+                : ""}
         </div>
     )
 }
