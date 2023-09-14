@@ -15,7 +15,10 @@ const Banner = () => {
                         <div className="position-absolute top-50 start-50 translate-middle">
                             <div className="row filter-first-row mb-2">
                                 <div className="col">
+                                    <div className="banner-head"><h1 className="mb-0"><strong>BrokkerSpot</strong></h1>
+                                        <h2>Find your dream </h2></div>
                                     <div className="d-grid gap-1 d-md-flex justify-content-md-center">
+
                                         <button className="btn active-btn" type="button">Buy</button>
                                         <button className="btn" type="button">Rent</button>
                                     </div>
@@ -89,7 +92,7 @@ const Banner = () => {
 
                 <div className="row d-block d-md-none sm-banner">
                     <div className="col px-0">
-                    <img src={BannerImg} className="" alt="banner" />
+                        <img src={BannerImg} className="" alt="banner" />
                     </div>
                     <div className="col-xs-12">
                         <div className="d-grid gap-1 d-flex justify-content-center buy-sell my-3">

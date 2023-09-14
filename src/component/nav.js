@@ -1,5 +1,8 @@
 import React from "react";
 import Logo from './images/logo.png';
+import LoginImg from './images/login1.png';
+import UserIcon from './images/user.png';
+import CloseEye from './images/closeEye.png';
 
 
 const Nav = () => {
@@ -45,19 +48,66 @@ const Nav = () => {
                     </div>
                 </div>
             </nav>
-            <div class="modal fade login-type-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Modal title</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div className="modal fade login-type-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title">
+                                Welcome to <span className="primary-text">Bokkerspot</span>
+                            </h5>
                         </div>
-                        <div class="modal-body">
-                            <p>Modal body text goes here.</p>
+                        <div className="modal-body text-center">
+                            <img src={LoginImg} alt="" />
+                            <div className="login-btns">
+                                <button type="button" className="btn mt-2" data-bs-toggle="modal" data-bs-target="#separateLogin">BUYER/ SELLER</button>
+                                <br />
+                                <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#separateLogin">BROKER</button>
+                            </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                        <div className="modal-footer">
+                            <p className="small"><span className="red-txt">Note : </span>Lorem ipsum dolor sit amet, consectetur adipscin
+                                gelit. Curabitur facilisis nibh tristique luctus posu
+                                ere.Duis eget nisl ex. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* //////////////////////////////////////////SEPARATE LOGIN//////////////////////////// */}
+            <div className="modal fade main-login-modal" id="separateLogin" tabindex="-1" aria-labelledby="separateLoginLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title primary-text">
+                                Broker Login
+                            </h5>
+                            <div>
+                                <p className="small">Don’t have an Account? <span className="primary-text">Sign Up</span></p>
+                            </div>
+                        </div>
+                        <div className="modal-body">
+
+                            <div className="input-boxes">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="i-p form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2" />
+                                    <span class="input-group-text" id="basic-addon2"><img src={UserIcon} alt="" /></span>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="i-p form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2" />
+                                    <span class="input-group-text" id="basic-addon2"><img src={CloseEye} alt="" /></span>
+                                </div>
+                                <div className="d-flex">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                    <label class="form-check-label small" for="flexCheckDefault">
+                                        &nbsp;Remember me  </label>
+                                </div>
+                                <p className="small mb-0">Forgot Password?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal-footer">
+                        <button type="button" className="btn">Login</button>
+                            <p className="small mt-3"><span className="primary-text">Need more help?</span></p>
                         </div>
                     </div>
                 </div>
