@@ -144,7 +144,7 @@ const innerPage = ({ DAMACData, promotionDataState }) => {
                                 return (
                                     <div class='item'>
                                         <div class="card">
-                                            <img src={data.image} class="card-img-top" alt="..." />
+                                            <img src={data.image} style={{minHeight:'200px'}} class="card-img-top" alt="..." />
                                             <button>80 UNITS</button>
                                             <div class="card-body">
                                                 <div className="d-flex">
