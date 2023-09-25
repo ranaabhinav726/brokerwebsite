@@ -266,8 +266,13 @@ body {
             font-size: 12px;
             margin-top: 5px;
         }
-
+        .card-img-top{
+            width: auto;
+            height: 150px;
+            object-fit: cover;
+        }
         .card-body {
+            
             .d-flex {
                 p {
                     font-size: 12px;
