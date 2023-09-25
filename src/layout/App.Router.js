@@ -7,7 +7,8 @@ function AppRouter() {
         <Router>
             <Suspense fallback={<div></div>} >
                 <Routes>
-                    <Route path={OurRoutes.ROOT} element={<Routers.ROOT />} />
+                <Route path={OurRoutes.ROOT} element={<Routers.ROOT />} />
+                <Route path={OurRoutes.ABOUT_US} element={<Routers.ABOUT_US />} />
                 </Routes>
             </Suspense>
         </Router>
