@@ -20,7 +20,7 @@ const AboutUs = () => {
                     <div className="row align-items-center">
 
                         <div className="col-sm-7 col-xs-12 mt-2 mb-2">
-                        <div style={{ marginRight: '100px' }}>
+                        <div style={{ marginRight: '' }}>
 
                             <h1 className="text-gradient primary-text">About BrokkerSpot</h1>
                             {/* <h4>Very nice subtitle</h4> */}
@@ -51,7 +51,7 @@ const AboutUs = () => {
                         </div>
                         <div className="col-sm-7  mb-2 mt-2">
                             
-                            <div style={{ marginLeft: '100px' }}>
+                            <div style={{ marginLeft: '' }}>
                                 <h1 className="text-gradient primary-text">Heading 2</h1>
 
                                 <p className="mb-md-5 mb-2">
@@ -73,7 +73,7 @@ ndard dummy text ever since the 1500s,
                     <div className="row align-items-center mt-3">
 
                         <div className="col-sm-7 col-xs-12 mt-2 mb-2">
-                        <div style={{ marginRight: '100px' }}>
+                        <div style={{ marginRight: '' }}>
 
                             <h1 className="text-gradient primary-text">Heading 3</h1>
                             <p className="mb-md-5 mb-2">
@@ -103,7 +103,7 @@ ndard dummy text ever since the 1500s,
                             </div>
                         </div>
                         <div className="col-sm-7  mb-2 mt-2">
-                            <div style={{ marginLeft: '100px' }}>
+                            <div style={{ marginLeft: '' }}>
                                 <h1 className="text-gradient primary-text">Heading 2</h1>
 
                                 <p className="mb-md-5 mb-2">
