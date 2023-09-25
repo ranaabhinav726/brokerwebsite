@@ -23,13 +23,13 @@ const Nav = () => {
                         <div className="d-flex ms-auto">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <a className="nav-link active" href="#">Home</a>
+                                    <a className="nav-link active" href="/">Home</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/about">About Us</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Contact Us</a>
+                                    <a className="nav-link" href="/contact">Contact Us</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">Announcements</a>

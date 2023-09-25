@@ -1,6 +1,8 @@
 import React from "react";
 import Nav from "./nav";
 import AbtImg from './images/about.jpg';
+import Footer from "./footer";
+
 
 
 const AboutUs = () => {
@@ -33,6 +35,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </section>
+            <Footer/>
         </>
     )
 }

@@ -10,7 +10,10 @@ $textcolor: #4E4E4E;
 .dark-grey {
     color: #333333;
 }
-
+.primary-bg{
+    background-color: $primaryColor;
+    color: $white;
+}
 body {
     font-family: 'Poppins', sans-serif;
 
@@ -408,7 +411,7 @@ body {
 }
 
 .primary-text {
-    color: $primaryColor;
+    color: $primaryColor !important;
 }
 
 .arrow-p {
@@ -632,6 +635,19 @@ body {
 
         img {
             width: 25px !important;
+        }
+    }
+}
+.contact-us{
+    h5{
+        font-weight: bold;
+    }
+    ul{
+        li{
+            a{
+                color: $primaryColor;
+                text-decoration: none !important;    
+            }
         }
     }
 }
