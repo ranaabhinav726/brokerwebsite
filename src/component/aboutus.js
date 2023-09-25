@@ -1,8 +1,8 @@
 import React from "react";
 import Nav from "./nav";
-import AbtImg from './images/about.jpg';
+import AbtImg from './images/third.jpg';
 import Footer from "./footer";
-import SecondImage from './images/Frame.png';
+import SecondImage from './images/aboutusimage.jpg';
 import FirstImage from './images/First.jpg';
 
 
